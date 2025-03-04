@@ -1,8 +1,44 @@
 {
-  "item.thaumatics.arcanegear": "Arcane Gear",
+  "item.thaumatics.arcanegear": "Ardor Gear",
   "item.thaumatics.darkgear": "Abysmal Gear",
-  "item.thaumatics.skygear": "Aviation Gear",
-  "item.thaumatics.lunardust": "Lunar Dust",
+  "item.thaumatics.skygear": "Ataraxis Gear",
+  "item.thaumatics.voidgear": "Annexus Gear",
+  "item.thaumatics.lunardust": "Celestial Dust",
+
+  "item.thaumatics.spellscroll": "Spell Scroll",
+  "item.thaumatics.spellscroll.None": "Spell Scroll",
+  "item.thaumatics.spellscroll.Arcane": "Ardor Scroll",
+  "item.thaumatics.spellscroll.Abysmal": "Abysmal Scroll",
+  "item.thaumatics.spellscroll.Aviation": "Ataraxis Scroll",
+
+  "item.thaumatics.spellscroll.none": "None",
+  "item.thaumatics.spellscroll.auraprojection": "Aura Projection",
+  "item.thaumatics.spellscroll.hellsflame": "Hell's Flame",
+  "item.thaumatics.spellscroll.wingsofheaven": "Wings of Heaven",
+
+  "item.thaumatics.spellbook.emptyText": "No Spells Stored",
+  "item.thaumatics.spellbook": "Spellbook",
+
+  "item.thaumatics.spellbook.tier.abysmal.obsidia": "Obsidia",
+  "item.thaumatics.spellbook.tier.abysmal.magmu": "Magmu",
+  "item.thaumatics.spellbook.tier.abysmal.lavar": "Lavar",
+  "item.thaumatics.spellbook.tier.abysmal.witor": "Witor",
+  "item.thaumatics.spellbook.tier.abysmal.blight": "Blight",
+
+  "item.thaumatics.spellbook.tier.ataraxis.pearlgu": "Pearlgu",
+  "item.thaumatics.spellbook.tier.ataraxis.enmite": "Enmite",
+  "item.thaumatics.spellbook.tier.ataraxis.soulsapien": "Soulsapien",
+  "item.thaumatics.spellbook.tier.ataraxis.crystal": "Crystal",
+  "item.thaumatics.spellbook.tier.ataraxis.dominion": "Dominion",
+
+  "item.thaumatics.spellbook.tier.ardor.emissary": "Emissary",
+  "item.thaumatics.spellbook.tier.ardor.dwelling": "Dwelling",
+  "item.thaumatics.spellbook.tier.ardor.animus": "Animus",
+  "item.thaumatics.spellbook.tier.ardor.indus": "Indus",
+  "item.thaumatics.spellbook.tier.ardor.larynx": "Larynx",
+
+  "item.thaumatics.necklace.noeffect": "None",
+  "item.thaumatics.necklace": "Imbued Necklace",
 
   "block.thaumatics.lunarstone": "Lunarstone",
 

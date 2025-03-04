@@ -4,6 +4,9 @@ import com.mojang.logging.LogUtils;
 import net.eclipticcosmos.thaumatics.block.ModBlocks;
 import net.eclipticcosmos.thaumatics.item.ModCreativeModTabs;
 import net.eclipticcosmos.thaumatics.item.ModItems;
+import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -50,12 +53,16 @@ public class ThaumaticStep
 
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
 
     }
+
+
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
@@ -77,10 +84,28 @@ public class ThaumaticStep
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
     {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
 
+        @SubscribeEvent
+        public static void registerOverrides(FMLClientSetupEvent event)
+        {
+            System.out.println("Registering item property overrides...");
+            ItemProperties.register(ModItems.SPELLSCROLL.get(), new ResourceLocation("element_type"),
+                    (stack, level, entity, seed) -> {
+                        CompoundTag tag = stack.getTag();
+                        String element = "none";
+                        if (tag != null) {
+                            element = tag.getString("Element");
+                            return switch (element) {
+                                case "Arcane" -> 1.0f;
+                                case "Abysmal" -> 2.0f;
+                                case "Aviation" -> 3.0f;
+                                default -> 0.0f;
+                            };
+                        } else {
+                            return 0.0f;
+                        }
+
+                    });
         }
     }
 }

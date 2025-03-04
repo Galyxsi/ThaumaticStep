@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "group": "lunarstone",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "thaumatics:lunarstone"
+  },
+  "result": "minecraft:sponge"
+}

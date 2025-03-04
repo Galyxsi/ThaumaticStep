@@ -1,0 +1,11 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "thaumatics:item/spellscrollnone"
+  },
+  "overrides": [
+    {"predicate": {"element_type": 1.0},"model": "thaumatics:item/spellscrollarcane"},
+    {"predicate": {"element_type": 2.0},"model": "thaumatics:item/spellscrollabysmal"},
+    {"predicate": {"element_type": 3.0},"model": "thaumatics:item/spellscrollaviation"}
+  ]
+}

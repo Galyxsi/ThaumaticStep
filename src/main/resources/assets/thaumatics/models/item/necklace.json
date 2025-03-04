@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "thaumatics:item/necklacestring",
+    "layer1": "thaumatics:item/necklacepotion"
+  }
+}
